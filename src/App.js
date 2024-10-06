@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Alm from './components/Alm';
 import Theory from './components/Theory';
 import Pretest from './components/Pretest';
 import Procedure from './components/Procedure';
@@ -21,13 +20,11 @@ function App() {
     <>
          <Header />
       <NavBar />
- 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/experiments" element={<Experiments />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path='/alm' element={<Alm />} />
         <Route path='/theory' element={<Theory />} />
         <Route path='/pretest' element={<Pretest />} />
         <Route path='/procedure' element={<Procedure />} />
