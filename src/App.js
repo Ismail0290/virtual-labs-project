@@ -14,7 +14,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Experiments from './components/Experiments';
 import Contact from './components/Contact';
-// Import each flexbox item component
 import SearchingSorting from './components/SearchingSorting';
 import Stacks from './components/Stacks';
 import Queue from './components/Queue';

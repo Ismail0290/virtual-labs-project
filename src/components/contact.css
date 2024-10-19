@@ -1,0 +1,33 @@
+.contact-us-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-details {
+    margin: 20px;
+
+    border: solid;
+    
+  }
+  
+  .contact-details p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    padding: 0px 50px;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-us-container {
+      width: 90%;
+    }
+  }
