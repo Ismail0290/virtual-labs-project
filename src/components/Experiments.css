@@ -1,0 +1,159 @@
+/* Container for the entire experiments page */
+.experiments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #FFCDB2, #FFD3BA); /* Bright gradient background */
+  min-height: 100vh; /* Full height */
+  color: #333; /* Darker text color for better contrast */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Styling for the title */
+.experiments-container h1 {
+  font-size: 5rem; /* Larger title */
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Enhanced shadow for title */
+}
+
+/* Flexbox container to hold the initial topics */
+.flexbox-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Flexbox item styling */
+.flexbox-item {
+  background: rgba(100, 182, 172, 0.8); /* Semi-transparent #64B6AC */
+  color: #333; /* Dark text for better readability */
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px; /* More rounded corners */
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+  position: relative; /* For pseudo-element positioning */
+  overflow: hidden; /* To contain pseudo-element */
+}
+
+.flexbox-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* Lighter overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.4s; /* Transition effect for overlay */
+  border-radius: 15px; /* Match item border radius */
+}
+
+.flexbox-item:hover::before {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.flexbox-item:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(255, 255, 255, 0.4); /* Lighter on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Shadow increase on hover */
+}
+
+/* Experiment details section */
+.experiment-details {
+  width: 100%;
+  max-width: 1400px; /* Increased max width */
+  margin-top: 20px;
+  padding: 30px; /* Increased padding */
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Shadow for detail area */
+  backdrop-filter: blur(10px); /* Blur effect for depth */
+}
+
+/* Two-column layout for navigation and content */
+.experiment-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px; /* Increased gap for more spacious layout */
+}
+
+/* Vertical navigation bar for sections */
+.experiment-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Increased gap for better spacing */
+  min-width: 300px; /* Wider for navigation */
+}
+
+/* Styling for navigation items */
+.nav-item {
+  background: linear-gradient(90deg, #FFD3BA, #FFCDB2); /* Colorful gradient */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+  padding: 20px; /* Increased padding */
+  border-radius: 10px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+  text-align: left;
+  font-size: 1.3rem; /* Larger font size */
+  color: #333; /* Text color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for nav items */
+}
+
+.nav-item:hover {
+  background: linear-gradient(90deg, #FFCDB2, #FFD3BA); /* Hover effect */
+  transform: translateX(5px); /* Slide effect */
+}
+
+.nav-item.active {
+  background: #E54B4B; /* Active item color */
+  color: white; /* Active text color */
+}
+
+/* Content area where the selected section's content is displayed */
+.experiment-content {
+  background: rgba(255, 255, 255, 0.5); /* More opaque content area */
+  padding: 40px; /* Increased padding for content area */
+  flex-grow: 1;
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Shadow for content area */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+}
+
+.experiment-content h3 {
+  margin-top: 0;
+  font-size: 3rem; /* Larger font size for section title */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for section title */
+}
+
+/* Add subtle animation to content transition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Slide up effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .flexbox-container {
+    grid-template-columns: 1fr; /* Stack items on small screens */
+  }
+
+  .experiment-layout {
+    flex-direction: column; /* Stack layout on small screens */
+  }
+
+  .experiment-nav {
+    min-width: 100%; /* Full width for navigation on small screens */
+  }
+}

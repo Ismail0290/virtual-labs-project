@@ -1,0 +1,12 @@
+.queue-element {
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
