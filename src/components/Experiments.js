@@ -1,43 +1,40 @@
 import React, { useState } from 'react';
 import './Experiments.css';
+import Animation from './Animation'; // Import the animation component
 
 const Experiments = () => {
-  const [selectedTopic, setSelectedTopic] = useState(null); // Topic selected from flexbox
-  const [selectedSection, setSelectedSection] = useState('Aim'); // Section selected within the experiment
+  const [selectedTopic, setSelectedTopic] = useState(null);
+  const [selectedSection, setSelectedSection] = useState('Aim');
 
-  // Updated list of sections to display in the experiment
   const sectionNavItems = [
     'Aim',
     'Overview',
-    'Video', // Changed from Recap to Video
+    'Video',
     'Pretest',
-    'Animation', // Changed from Code Assessment to Animation
+    'Animation',
     'Analysis',
     'Posttest',
     'Further Readings/References',
     'Feedback'
   ];
 
-  // Content for each section
   const sectionContent = {
     Aim: 'This is the aim of the experiment.',
     Overview: 'This is the overview of the experiment.',
-    Video: 'This section contains video resources related to the experiment.', // Updated content
+    Video: 'This section contains video resources related to the experiment.',
     Pretest: 'This is the pretest for the experiment.',
-    Animation: 'This section explains the animation related to the experiment.', // Updated content
+    Animation: '', // Empty because we're displaying the animation component
     Analysis: 'This is the analysis of the results.',
     Posttest: 'This is the posttest for the experiment.',
     'Further Readings/References': 'References and further readings.',
     Feedback: 'Provide your feedback here.'
   };
 
-  // Handle flexbox topic click
   const handleTopicClick = (topic) => {
     setSelectedTopic(topic);
-    setSelectedSection('Aim'); // Default section when a topic is clicked
+    setSelectedSection('Aim');
   };
 
-  // Handle section click within the experiment
   const handleSectionClick = (section) => {
     setSelectedSection(section);
   };
@@ -46,7 +43,6 @@ const Experiments = () => {
     <div className="experiments-container">
       <h1>Experiments</h1>
 
-      {/* Flexbox container to show topics */}
       {!selectedTopic && (
         <div className="flexbox-container">
           <div className="flexbox-item" onClick={() => handleTopicClick('Searching & Sorting')}>Searching & Sorting</div>
@@ -58,13 +54,11 @@ const Experiments = () => {
         </div>
       )}
 
-      {/* Conditionally render the selected experiment's sections */}
       {selectedTopic && (
         <div className="experiment-details">
           <h2>{selectedTopic} Experiment</h2>
 
           <div className="experiment-layout">
-            {/* Section navigation (rendered vertically on the left) */}
             <div className="experiment-nav">
               {sectionNavItems.map((section) => (
                 <button
@@ -77,10 +71,14 @@ const Experiments = () => {
               ))}
             </div>
 
-            {/* Content area for the selected section */}
             <div className="experiment-content">
               <h3>{selectedSection}</h3>
-              <p>{sectionContent[selectedSection]}</p>
+              
+              {selectedSection === 'Animation' ? (
+                <Animation topic={selectedTopic} /> // Pass selectedTopic as a prop to Animation component
+              ) : (
+                <p>{sectionContent[selectedSection]}</p>
+              )}
             </div>
           </div>
         </div>
@@ -90,3 +88,4 @@ const Experiments = () => {
 };
 
 export default Experiments;
+  
