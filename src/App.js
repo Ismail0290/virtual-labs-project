@@ -3,7 +3,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import Alm from './components/Alm';
 import Theory from './components/Theory';
 import Pretest from './components/Pretest';
 import Procedure from './components/Procedure';
@@ -14,12 +13,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Experiments from './components/Experiments';
 import Contact from './components/Contact';
-import SearchingSorting from './components/SearchingSorting';
-import Stacks from './components/Stacks';
-import Queue from './components/Queue';
-import LinkedList from './components/LinkedList';
-import Tree from './components/Tree';
-import Graph from './components/Graph';
+import SearchingSorting from './components/Searchingsorting/SearchingSorting';
+import Stacks from './components/Stack/Stacks';
+import Queue from './components/Queue/Queue';
+import LinkedList from './components/Linkedlist/LinkedList';
+import Tree from './components/Tree/Tree';
+import Graph from './components/Graph/Graph';
 
 function App() {
   return (
@@ -31,7 +30,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/experiments" element={<Experiments />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/alm" element={<Alm />} />
         <Route path="/theory" element={<Theory />} />
         <Route path="/pretest" element={<Pretest />} />
         <Route path="/procedure" element={<Procedure />} />

@@ -39,12 +39,12 @@ const Header = () => {
             </button>} position="right center">
               {close => (
                 <div>
-                  <img src={logo} className="card-img-top" alt="..." className={styles.headerimg} />
+                  <img src={logo} className="card-img-top" alt="..." cName={styles.headerimg} />
                   <a className="close" onClick={close}>
                     &times;
                   </a>
                   <div className={styles.header}>
-                    <h5 className="card-title" className={styles.rate}>Rate</h5>
+                    <h5 className="card-title" cName={styles.rate}>Rate</h5>
                   </div>
                   <div className={styles.ratestart}>
                     {[1, 2, 3, 4, 5].map((star) => {
@@ -84,7 +84,7 @@ const Header = () => {
                     &times;
                   </a>
                   <div className={styles.header}>
-                    <h5 className="card-title" className={styles.bug}>Bug Report</h5>
+                    <h5 className="card-title" cName={styles.bug}>Bug Report</h5>
                   </div>
                   <hr />
                   <div className={styles.content}>
