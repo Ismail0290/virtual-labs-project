@@ -91,6 +91,79 @@ const Posttest = ({ topic }) => {
                       '5,8'], 
             answer: '8,5' },
         ],
+        Tree: [
+          { question: 'Level of a node is distance from root to that node. For example, level of root is 1 and levels of left and right children of root is 2. The maximum number of nodes on level i of a binary tree is In the following answers, the operator '^' indicates power.', 
+            options: ['2^(i-1)', 
+                      '2^i', 
+                      '2^(i+1)', 
+                      '2^[(i+1)/2]'], 
+            answer: '2^(i-1)' },
+
+          { question: 'In a complete k-ary tree, every internal node has exactly k children or no child. The number of leaves in such a tree with n internal nodes is?', 
+            options: ['nk', '(n - 1) k+ 1', 'n( k - 1) + 1', 'n(k - 1)'], 
+            answer: 'n( k - 1) + 1' },
+
+          { question: 'The number of leaf nodes in a rooted tree of n nodes, with each node having 0 or 3 children is:', 
+            options: ['1', 
+                          '5', 
+                          '4', 
+                          '3'], 
+            answer: '5' },
+
+        { question: 'The number of leaf nodes in a rooted tree of n nodes, with each node having 0 or 3 children is:', 
+            options: ['Heap', 
+                      '', 
+                      'To empty a queue', 
+                      'Both Insertion and To empty a queue'], 
+            answer: 'Both Insertion and To empty a queue' },
+        ],
+        Graph: [
+          {
+            question: 'Which of the following algorithms is used to find the shortest path in a weighted graph?', 
+            options: ['Depth First Search', 
+                      'Breadth First Search', 
+                      'Dijkstra’s Algorithm', 
+                      'Kruskal’s Algorithm'], 
+            answer: 'Dijkstra’s Algorithm' 
+          },
+          
+          {
+            question: 'What is the time complexity of Floyd-Warshall algorithm for finding shortest paths between all pairs of vertices?', 
+            options: ['O(V^2)', 
+                      'O(V * E)', 
+                      'O(V^3)', 
+                      'O(E^2)'], 
+            answer: 'O(V^3)' 
+          },
+          
+          {
+            question: 'In a directed graph, which of the following statements is true about topological sorting?', 
+            options: ['It can be applied to any graph', 
+                      'It can be applied only to acyclic graphs', 
+                      'It can be applied to cyclic graphs', 
+                      'It can only be applied to trees'], 
+            answer: 'It can be applied only to acyclic graphs' 
+          },
+          
+          {
+            question: 'What is the main purpose of a Minimum Spanning Tree (MST) algorithm?', 
+            options: ['To find the shortest path between two nodes', 
+                      'To find a subset of edges that connects all vertices with minimal total edge weight', 
+                      'To detect cycles in a graph', 
+                      'To check if a graph is bipartite'], 
+            answer: 'To find a subset of edges that connects all vertices with minimal total edge weight' 
+          },
+          
+          {
+            question: 'In a graph, what is the main difference between Prim’s and Kruskal’s algorithms?', 
+            options: ['Prim’s starts with a vertex, Kruskal’s starts with an edge', 
+                      'Prim’s works for directed graphs, Kruskal’s only for undirected graphs', 
+                      'Prim’s finds the shortest path, Kruskal’s finds the longest path', 
+                      'There is no difference'], 
+            answer: 'Prim’s starts with a vertex, Kruskal’s starts with an edge' 
+          }
+          
+        ],
         // Add other topics
       };
 

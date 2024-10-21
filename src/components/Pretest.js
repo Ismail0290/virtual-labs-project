@@ -105,56 +105,70 @@ const Pretest = ({ topic }) => {
             answer: 'Both Insertion and To empty a queue' },
         ],
         Tree: [
-          { question: 'Which of the following properties is associated with a queue?', 
-            options: ['First In Last Out', 
-                      'First In First Out', 
-                      'Last In First Out', 
-                      'Last in Last Out'], 
-            answer: 'First In First Out' },
+          { question: 'The number of edges from the root to the node is called __________ of the tree.', 
+            options: ['Height', 
+                      'Depth', 
+                      'Length', 
+                      'Width'], 
+            answer: 'Depth' },
 
-          { question: 'What is the term for inserting into a full queue known as?', 
-            options: ['overflow', 'underflow', 'null pointer exception', 'program won’t be compiled'], 
-            answer: 'overflow' },
+          { question: 'What is a full binary tree?', 
+            options: ['Each node has exactly zero or two children', 
+                      'Each node has exactly two children', 
+                      'All the leaves are at the same level', 
+                      'Each node has exactly one or two children'], 
+            answer: 'Each node has exactly zero or two children' },
 
-          { question: 'What is a dequeue?', 
-            options: ['A queue with insert/delete defined for both front and rear ends of the queue', 
-                          'A queue implemented with a doubly linked list', 
-                          'A queue implemented with both singly and doubly linked lists', 
-                          'A queue with insert/delete defined for front side of the queue'], 
-            answer: 'A queue with insert/delete defined for both front and rear ends of the queue' },
+          { question: 'What is a complete binary tree?', 
+            options: [' Each node has exactly zero or two children', 
+                      'A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from right to left', 
+                      'A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from left to right', 
+                      'A tree In which all nodes have degree 2'], 
+            answer: 'A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from left to right' },
 
-        { question: ' In linked list implementation of queue, if only front pointer is maintained, which of the following operation take worst case linear time?', 
-            options: ['Insertion', 
-                      'Deletion', 
-                      'To empty a queue', 
-                      'Both Insertion and To empty a queue'], 
-            answer: 'Both Insertion and To empty a queue' },
+        { question: ' Which of the following is not an advantage of trees?', 
+            options: ['Hierarchical structure', 
+                      'Faster search', 
+                      'Router algorithms', 
+                      'Undo/Redo operations in a notepad'], 
+            answer: 'Undo/Redo operations in a notepad' },
         ],
         Graph: [
-          { question: 'Which of the following properties is associated with a queue?', 
-            options: ['First In Last Out', 
-                      'First In First Out', 
-                      'Last In First Out', 
-                      'Last in Last Out'], 
-            answer: 'First In First Out' },
-
-          { question: 'What is the term for inserting into a full queue known as?', 
-            options: ['overflow', 'underflow', 'null pointer exception', 'program won’t be compiled'], 
-            answer: 'overflow' },
-
-          { question: 'What is a dequeue?', 
-            options: ['A queue with insert/delete defined for both front and rear ends of the queue', 
-                          'A queue implemented with a doubly linked list', 
-                          'A queue implemented with both singly and doubly linked lists', 
-                          'A queue with insert/delete defined for front side of the queue'], 
-            answer: 'A queue with insert/delete defined for both front and rear ends of the queue' },
-
-        { question: ' In linked list implementation of queue, if only front pointer is maintained, which of the following operation take worst case linear time?', 
-            options: ['Insertion', 
-                      'Deletion', 
-                      'To empty a queue', 
-                      'Both Insertion and To empty a queue'], 
-            answer: 'Both Insertion and To empty a queue' },
+          { 
+            question: 'Which of the following properties is associated with a graph?', 
+            options: ['Vertices and Edges', 
+                      'Only Vertices', 
+                      'Only Edges', 
+                      'Nodes and Stacks'], 
+            answer: 'Vertices and Edges' 
+          },
+          
+          { 
+            question: 'What is the term for a graph with no cycles?', 
+            options: ['Complete graph', 
+                      'Tree', 
+                      'Cyclic graph', 
+                      'Bipartite graph'], 
+            answer: 'Tree' 
+          },
+          
+          { 
+            question: 'What is a connected graph?', 
+            options: ['A graph where there is a path between every pair of vertices', 
+                      'A graph with no edges', 
+                      'A graph with only isolated vertices', 
+                      'A graph where every vertex has a self-loop'], 
+            answer: 'A graph where there is a path between every pair of vertices' 
+          },
+          
+          { 
+            question: 'What is the time complexity of Depth First Search (DFS) for a graph with V vertices and E edges?', 
+            options: ['O(V)', 
+                      'O(E)', 
+                      'O(V + E)', 
+                      'O(V * E)'], 
+            answer: 'O(V + E)' 
+          }          
         ],
         // Add other topics
       };
