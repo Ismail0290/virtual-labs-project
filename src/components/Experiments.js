@@ -52,12 +52,12 @@ const Experiments = () => {
       Feedback: <FeedbackForm topic="Stacks" /> // Use FeedbackForm component
     },
     Queue: {
-      Aim: 'To implement a queue data structure.',
-      Overview: <Queue />,
-      Video: 'This section contains video resources related to Queue.',
-      Pretest: <Pretest topic="Queue" />,
+      Aim: 'To implement a stack data structure...',
+      Overview: <Queue/>,
+      Video: 'This section contains video resources related to Stacks.',
+      Pretest: <Pretest topic="Queue" />,  // Pass data structure to Pretest
       Animation: '',
-      Analysis: 'This is the analysis of the results for Queue.',
+      Analysis: 'This is the analysis of the results for Stacks.',
       Posttest: <Posttest topic="Queue" />,
       'Further Readings/References': 'References and further readings for Queue.',
       Feedback: <FeedbackForm topic="Queue" /> // Use FeedbackForm component
