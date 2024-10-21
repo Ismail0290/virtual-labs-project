@@ -157,3 +157,14 @@
     min-width: 100%; /* Full width for navigation on small screens */
   }
 }
+
+/* src/Experiments.css */
+.video-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+}
