@@ -6,7 +6,7 @@ function About() {
     <div className="about-container">
       <h1 className="about-title">Overview</h1>
       <p className="about-description">
-        Virtual Labs project is an initiative of Ministry of Education (MoE), Government of India under the aegis of National Mission on Education through Information and Communication Technology (NMEICT). This project is a consortium activity of twelve participating institutes, with IIT Delhi as the coordinating institute. It represents a paradigm shift in ICT-based education, introducing for the first time a large-scale initiative in remote experimentation. Under the Virtual Labs project, over 100 Virtual Labs consisting of approximately 700+ web-enabled experiments have been developed for remote operation and viewing.
+      VLabs project is an initiative of Ministry of Education (MoE), Government of India under the aegis of National Mission on Education through Information and Communication Technology (NMEICT). This project is a consortium activity of twelve participating institutes, with IIT Delhi as the coordinating institute. It represents a paradigm shift in ICT-based education, introducing for the first time a large-scale initiative in remote experimentation. Under the Virtual Labs project, over 100 Virtual Labs consisting of approximately 700+ web-enabled experiments have been developed for remote operation and viewing.
       </p>
 
       <h2 className="beneficiaries-title">The intended beneficiaries of the project are:</h2>

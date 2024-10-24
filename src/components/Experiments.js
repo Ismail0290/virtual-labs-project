@@ -27,7 +27,6 @@ const Experiments = () => {
     'Feedback'
   ];
 
-  // Define content for each experiment's section
   const sectionContent = {
     'Searching & Sorting': {
       Aim: 'To implement various searching and sorting algorithms (e.g., linear search, insertion sort) and analyze their time and space complexity...',
