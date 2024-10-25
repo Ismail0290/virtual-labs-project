@@ -58,7 +58,7 @@ const Experiments = () => {
         </div>
       ),
       Pretest: <Pretest topic="Searching & Sorting" />,
-      Animation: '',
+      Animation: <Animation topic="Searching & Sorting" />,
       Analysis: 'This is the analysis of the results for Searching & Sorting.',
       Posttest: <Posttest topic="Searching & Sorting" />,
       'Further Readings/References': 'References and further readings for Searching & Sorting.',
@@ -72,8 +72,8 @@ const Experiments = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/WrHKixGK-eQ"
-            title="Stacks Video"
+            src="https://www.youtube.com/embed/y4ANxMXER58"
+            title="Stack Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -81,7 +81,7 @@ const Experiments = () => {
         </div>
       ),
       Pretest: <Pretest topic="Stacks" />,
-      Animation: '',
+      Animation: <Animation topic="Stacks" />,
       Analysis: 'This is the analysis of the results for Stacks.',
       Posttest: <Posttest topic="Stacks" />,
       'Further Readings/References': 'References and further readings for Stacks.',
@@ -104,7 +104,7 @@ const Experiments = () => {
         </div>
       ),
       Pretest: <Pretest topic="Queue" />,
-      Animation: '',
+      Animation: <Animation topic="Queue" />,
       Analysis: 'This is the analysis of the results for Queue.',
       Posttest: <Posttest topic="Queue" />,
       'Further Readings/References': 'References and further readings for Queue.',
@@ -113,21 +113,9 @@ const Experiments = () => {
     LinkedList: {
       Aim: 'To implement a linked list data structure...',
       Overview: <LinkedList />,
-      Video: (
-        <div className="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-            title="Linked List Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      ),
+      Video: <p>Video content for Linked List is not available at the moment.</p>,
       Pretest: <Pretest topic="LinkedList" />,
-      Animation: '',
+      Animation: <Animation topic="LinkedList" />,
       Analysis: 'This is the analysis of the results for Linked List.',
       Posttest: <Posttest topic="LinkedList" />,
       'Further Readings/References': 'References and further readings for Linked List.',
@@ -136,21 +124,9 @@ const Experiments = () => {
     Tree: {
       Aim: 'To implement a tree data structure...',
       Overview: <Tree />,
-      Video: (
-        <div className="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-            title="Tree Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      ),
+      Video: <p>Video content for Tree is not available at the moment.</p>,
       Pretest: <Pretest topic="Tree" />,
-      Animation: '',
+      Animation: <Animation topic="Tree" />,
       Analysis: 'This is the analysis of the results for Tree.',
       Posttest: <Posttest topic="Tree" />,
       'Further Readings/References': 'References and further readings for Tree.',
@@ -159,21 +135,9 @@ const Experiments = () => {
     Graph: {
       Aim: 'To implement a graph data structure...',
       Overview: <Graph />,
-      Video: (
-        <div className="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-            title="Graph Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      ),
+      Video: <p>Video content for Graph is not available at the moment.</p>,
       Pretest: <Pretest topic="Graph" />,
-      Animation: '',
+      Animation: <Animation topic="Graph" />,
       Analysis: 'This is the analysis of the results for Graph.',
       Posttest: <Posttest topic="Graph" />,
       'Further Readings/References': 'References and further readings for Graph.',
