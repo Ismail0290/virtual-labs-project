@@ -1,0 +1,56 @@
+.pretest{
+    background-color: #f2f2f2; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    font-family: Arial, sans-serif; /* Modern font */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .pretest h3 {
+    color: #333; /* Dark grey color for the title */
+  }
+  
+  .question-block {
+    background-color: #fff; /* White background for questions */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0; /* Space between question blocks */
+    padding: 15px; /* Inner padding */
+    border: 1px solid #ddd; /* Light grey border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+  }
+  
+  .question-block h5 {
+    color: #555; /* Medium grey color for questions */
+  }
+  
+  .question-block label {
+    display: block; /* Each option on a new line */
+    margin: 5px 0; /* Space between options */
+    font-size: 16px; /* Larger font size */
+  }
+  
+  .question-block input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and option text */
+  }
+  
+  button {
+    background-color: #007bff; /* Bootstrap blue color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Inner padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .score {
+    margin-top: 20px; /* Space above the score */
+    color: #28a745; /* Bootstrap green color */
+    font-size: 18px; /* Larger font size */
+  }
+  

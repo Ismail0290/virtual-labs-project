@@ -15,17 +15,17 @@ const Footer = () => {
         <div className='col d-flex flex-column my-4'>
           <span>Contact Us</span>
           <hr />
-          <span>Phone: General Information: 011-26582050</span>
-          <span>Email: support@vlabs.ac.in</span>
+          <span>Phone: General Information: 8973957483</span>
+          <span>Email: Vlabs-help@gmail.com</span>
         </div>
         <div className='col d-flex flex-column mt-4'>
           <span>Follow Us</span>
           <hr />
           <div>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <a href='https://x.com/?lang=en' class="fa fa-twitter"></a><br/>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a><br/>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a><br/>
+            <a href="https://in.linkedin.com/" class="fa fa-linkedin"></a><br/>
           </div>
         </div>
       </div>

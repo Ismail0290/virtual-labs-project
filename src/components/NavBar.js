@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Navbar.css"
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -6,7 +7,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Virtual Labs
+          VLabs
         </Link>
         <button
           className="navbar-toggler"

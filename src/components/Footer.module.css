@@ -1,18 +1,18 @@
 .ftTop {
     font-size: 14px;
-    background: rgb(17, 17, 17);
-    color: #f8f9fa;
+    background: #FFCDB2;
+    color: black;
     /* padding: 10px; */
 }
 
 .flink a {
-    color: #f8f9fa;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
 .flink a:hover {
-    color: #cbd3da;
+    color: blue;
     text-decoration: underline;
 }
 

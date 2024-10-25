@@ -1,3 +1,5 @@
+
+
 .navBar {
     background: #fff;
     border-bottom: 6px solid #ff6600;
@@ -13,11 +15,11 @@
 
 .headerimg {
     width: 184px;
-    height: 118px;
+    height: 138px;
 }
 
 .img {
-    width: 86px;
+    width: 106px;
     height: 54px;
     max-width: 100%;
 }

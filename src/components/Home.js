@@ -22,8 +22,8 @@ const Home = () => {
             concepts through remote experimentation.
           </li>
           <li>
-            To provide a complete Learning Management System around the Virtual
-            Labs where the students/teachers can avail various tools for
+            To provide a complete Learning Management System around the VLabs
+             where the students/teachers can avail various tools for
             learning, including additional web-resources, video-lectures,
             animated demonstrations, and self-evaluation.
           </li>
@@ -36,7 +36,7 @@ const Home = () => {
           Good lab facilities and updated lab experiments are critical for any
           engineering college. Paucity of lab facilities often makes it
           difficult to conduct experiments. Also, good teachers are always a
-          scarce resource. The Virtual Labs project addresses this issue of lack
+          scarce resource. The VLabs project addresses this issue of lack
           of good lab facilities, as well as trained teachers, by providing
           remote-access to simulation-based Labs in various disciplines of
           science and engineering. Yet another objective is to arouse the
@@ -45,7 +45,7 @@ const Home = () => {
           advanced concepts through simulation-based experimentation. Internet-based experimentation further permits the use of additional web-resources, video-lectures, animated demonstrations, and self-evaluation.
         </p>
         <p>
-          Specifically, the Virtual Labs project addresses the following:
+          Specifically, the VLabs project addresses the following:
         </p>
         <ul>
           <li>
@@ -61,7 +61,7 @@ const Home = () => {
             online training
           </li>
           <li>
-            Virtual labs are any place, any pace, any-time, any-type labs. It is
+            Vlabs are any place, any pace, any-time, any-type labs. It is
             a paradigm shift in student-centric, online education.
           </li>
         </ul>

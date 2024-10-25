@@ -11,8 +11,24 @@ const Stacks = () => {
                 <p>
                     <strong>Chapter: The Stack - A Fundamental Data Structure</strong>
                 </p>
+                {/* <div>
+                 
+                       <a href="#Introduction">2. Understanding the Stack Structuren</a><br/>
+                       <a href="#Understanding the Stack Structure">3. Stack Operations in Detail</a><br/>
+                       <a href="#Stack Operations in Detail">4. Applications of Stacks</a><br/>
+                       <a href="#Applications of Stacks">5. Implementation of Stacks</a><br/>
+                       <a href="#Implementation of Stacks">6. Advantages and Limitations</a><br/>
+                       <a href="#Conclusion">6. Advantages and Limitations</a><br/>
+                       <a href="#Conclusion">7. Conclusion</a><br/>                  
+                  
+                </div> */}
+                <div>
+                    <div id="Introduction">
+                        <h4 > <strong>1. Introduction</strong></h4>
+                    </div>
+                
                 <p>
-                    <strong>1. Introduction</strong><br />
+                   
                     A stack is a fundamental data structure in computer science, commonly used in a variety of applications. 
                     It operates on a Last In, First Out (LIFO) principle, meaning the last element added to the stack is the 
                     first one to be removed. This simple yet powerful structure underpins several key algorithms and processes 
@@ -20,9 +36,11 @@ const Stacks = () => {
                     we will explore the concept of a stack, its operations, practical applications, and how it's implemented in 
                     different programming languages.
                 </p>
-                <p>
-                    <strong>2. Understanding the Stack Structure</strong>
-                </p>
+
+                    <div id='Understanding the Stack Structure'>
+                          <h4 > <strong>2. Understanding the Stack Structure</strong></h4>
+                    </div>           
+
                 <p>
                     <strong>2.1. Concept of LIFO</strong><br />
                     The core idea behind a stack is the LIFO (Last In, First Out) property. Imagine a stack of plates; the last 
@@ -40,9 +58,13 @@ const Stacks = () => {
                     These operations are designed to ensure that elements are added and removed in a strict LIFO manner, 
                     providing a predictable behavior for managing data.
                 </p>
-                <p>
-                    <strong>3. Stack Operations in Detail</strong>
-                </p>
+
+                     <div id='Stack Operations in Detail'>
+                         <h4 > <strong>3. Stack Operations in Detail</strong></h4>
+                    </div>
+               
+               
+               
                 <p>
                     <strong>3.1. Push Operation</strong><br />
                     The push operation adds a new element to the top of the stack. When pushing a new element, the stack pointer 
@@ -64,9 +86,13 @@ const Stacks = () => {
                     The isEmpty operation checks whether the stack contains any elements. If the stack is empty, it returns true; 
                     otherwise, it returns false. This operation is important to avoid errors when trying to pop from an empty stack.
                 </p>
-                <p>
-                    <strong>4. Applications of Stacks</strong>
-                </p>
+
+                    <div id='Applications of Stacks'>
+                         <h4 > <strong>4. Applications of Stacks</strong></h4>
+                    </div>
+               
+               
+                
                 <p>
                     <strong>4.1. Function Call Management</strong><br />
                     One of the most critical uses of a stack is in the function call stack. When a program calls a function, the 
@@ -91,9 +117,13 @@ const Stacks = () => {
                     diving deep into one branch before backtracking. A stack is used to keep track of the vertices or nodes 
                     as the algorithm navigates through the graph.
                 </p>
-                <p>
-                    <strong>5. Implementation of Stacks</strong>
-                </p>
+
+                    <div id='Implementation of Stacks'>
+                        <h4 > <strong>5. Implementation of Stacks</strong></h4>
+                    </div>
+               
+                
+                
                 <p>
                     <strong>5.1. Stack Implementation Using Arrays</strong><br />
                     A stack can be easily implemented using arrays. In this approach, the top of the stack is represented by an 
@@ -105,9 +135,13 @@ const Stacks = () => {
                     the linked list represents an element in the stack, and a pointer to the next node is maintained. The top of 
                     the stack is the head of the linked list.
                 </p>
-                <p>
-                    <strong>6. Advantages and Limitations</strong>
-                </p>
+
+                    <div id='Advantages and Limitations'>
+                        <h4 > <strong>6. Advantages and Limitations</strong></h4>
+                    </div>
+               
+                
+              
                 <p>
                     <strong>6.1. Advantages of Stacks</strong><br />
                     Simple to implement: Stacks are easy to understand and can be implemented with basic data structures like arrays 
@@ -123,8 +157,15 @@ const Stacks = () => {
                     Size constraints: In some implementations, such as those using arrays, stacks may have a fixed size, limiting 
                     the number of elements they can hold.
                 </p>
+
+                    <div id='Conclusion'>
+                        <h4  > <strong>7. Conclusion</strong></h4>  
+                    </div>
+
+                     
+
                 <p>
-                    <strong>7. Conclusion</strong><br />
+                    
                     The stack is a fundamental and versatile data structure that plays a crucial role in many computing applications, 
                     from managing program execution in the call stack to performing depth-first search in graph traversal. Despite 
                     its simplicity, the stack's LIFO behavior makes it an indispensable tool in a variety of algorithms and systems.
@@ -132,6 +173,8 @@ const Stacks = () => {
                     for any programmer or computer scientist. While it has limitations in terms of random access, its efficiency and 
                     ease of use ensure that stacks remain a vital part of algorithm design and data structure theory.
                 </p>
+                </div>
+         
             </section>
         </div>
     );

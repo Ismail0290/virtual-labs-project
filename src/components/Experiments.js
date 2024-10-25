@@ -27,7 +27,6 @@ const Experiments = () => {
     'Feedback'
   ];
 
-  // Define content for each experiment's section
   const sectionContent = {
     'Searching & Sorting': {
       Aim: 'To implement various searching and sorting algorithms (e.g., linear search, insertion sort) and analyze their time and space complexity...',
@@ -104,7 +103,7 @@ const Experiments = () => {
         </div>
       ),
       Pretest: <Pretest topic="Queue" />,
-      Animation: <Animation topic="Queue" />,
+      Animation: '',
       Analysis: 'This is the analysis of the results for Queue.',
       Posttest: <Posttest topic="Queue" />,
       'Further Readings/References': 'References and further readings for Queue.',

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import navLogo from "../assets/logo.jpg";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.jpg';
 import Popup from "reactjs-popup";
 import 'reactjs-popup/dist/index.css';
 
@@ -19,17 +17,9 @@ const Header = () => {
         <div className="container-fluid">
 
           <div className={styles.navbarWrap}>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
             <a className="navbar-brand" href="#">
-              <img src={navLogo} alt="Bootstrap" className={styles.img} />
+              {/* Updated the logo URL */}
+              <img src="https://www.v-labs.ai/assets/img/logo.png" alt="Virtual Labs Logo" className={styles.img} />
             </a>
           </div>
 
@@ -39,7 +29,7 @@ const Header = () => {
             </button>} position="right center">
               {close => (
                 <div>
-                  <img src={logo} className="card-img-top" alt="..." cName={styles.headerimg} />
+                  <img src="https://www.v-labs.ai/assets/img/logo.png" className="card-img-top" alt="Virtual Labs Logo" cName={styles.headerimg} />
                   <a className="close" onClick={close}>
                     &times;
                   </a>
@@ -146,7 +136,7 @@ const Header = () => {
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                Virtual Labs
+                VLabs
               </h5>
               <button
                 type="button"
@@ -168,4 +158,3 @@ const Header = () => {
 };
 
 export default Header;
-
