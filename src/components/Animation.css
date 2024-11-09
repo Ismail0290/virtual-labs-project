@@ -1,168 +1,52 @@
-/* General Styles */
-.animation-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 50px auto;
-    transition: transform 0.3s ease;
-}
-
-.topic-title {
-    color: #fff;
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.description {
-    color: #fff;
-    font-size: 1.2em;
-    text-align: center;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-/* Stack Styles */
+/* src/components/Animation.css */
 .stack-container {
-    display: flex;
-    flex-direction: column-reverse; /* Stack elements from bottom to top */
-    align-items: center;
-    width: 150px;
-    height: 400px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 10px;
-    border: 2px solid #0072ff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.stack-item {
-    background-color: #ff6347;
-    color: #fff;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .stack {
+    border: 1px solid #333;
     width: 100px;
-    height: 40px;
-    margin: 5px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
-    cursor: grab;
-}
-
-/* Add hover effect for draggable items */
-.stack-item:hover {
-    background-color: #ff7f50;
-}
-
-/* Queue Styles */
-.queue-container {
-    display: flex;
-    flex-direction: row; /* Queue elements in a row (left to right) */
-    justify-content: flex-start; /* Align items from left */
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
+    min-height: 150px;
+    margin: 20px auto;
     padding: 10px;
-    border: 2px solid #32cd32;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    gap: 10px; /* Add some space between queue items */
-}
-
-.queue-item {
-    background-color: #32cd32;
-    color: #fff;
-    width: 80px; /* Adjust item width to fit more in a row */
-    height: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .stack-item {
+    background-color: #3498db;
+    color: white;
+    padding: 5px;
+    margin: 3px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
-    cursor: grab;
-}
-
-/* Linked List Styles */
-.linked-list-container {
-    position: relative;
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    margin: 0 auto;
-}
-
-.list-node {
-    position: absolute;
-    width: 50px; /* Adjust as needed for node size */
-    height: 50px; /* Adjust as needed for node size */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #ff6347; /* Example background color for nodes */
-    color: #fff;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
-}
-
-.arrow {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    font-size: 1.5em; /* Adjust arrow size */
-    color: #fff; /* Arrow color */
-    transform: translate(-50%, -50%);
-}
-
-/* Positioning arrows */
-.list-node:nth-child(1) .arrow {
-    left: 100%; /* Position arrow to the right of the first node */
-    top: 50%; /* Center vertically */
-    transform: translate(0, -50%);
-}
-
-.list-node:nth-child(2) .arrow {
-    left: 100%; /* Position arrow to the right of the second node */
-    top: 50%; /* Center vertically */
-    transform: translate(0, -50%);
-}
-
-/* Buttons */
-.button-group .button {
-    background-color: #0072ff;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
+    gap: 10px;
+  }
+  
+  input[type="number"] {
+    padding: 5px;
+    width: 60px;
+  }
+  
+  button {
+    padding: 5px 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button-group .button:hover {
-    background-color: #005bb5;
-}
-
-/* Stack/Queue Specific Buttons */
-.button.push-btn {
-    background-color: #ff6347;
-}
-
-.button.pop-btn {
-    background-color: #32cd32;
-}
-
-.button.push-btn:hover, .button.pop-btn:hover {
-    background-color: #ff4500;
-}
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
