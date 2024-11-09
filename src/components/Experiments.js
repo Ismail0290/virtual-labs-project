@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import './Experiments.css';
-import Animation from './Animation';
+import StackAnimation from './StackAnimation'; // Import the stack animation component
+import QueueAnimation from './QueueAnimation'; 
+
+import LinkedListAnimation from './LinkedListAnimation';
 import Stacks from './Stack/Stacks';
 import SearchingSorting from './Searchingsorting/SearchingSorting';
+
 import Queue from './Queue/Queue';
 import LinkedList from './Linkedlist/LinkedList';
 import Tree from './Tree/Tree';
@@ -10,6 +14,7 @@ import Graph from './Graph/Graph';
 import Pretest from './Pretest';
 import Posttest from './Posttest';
 import FeedbackForm from './FeedbackForm';
+import TreeAnimation from './TreeAnimation';
 
 const Experiments = () => {
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -57,7 +62,7 @@ const Experiments = () => {
         </div>
       ),
       Pretest: <Pretest topic="Searching & Sorting" />,
-      Animation: <Animation topic="Searching & Sorting" />,
+      Animation: <div>No animation available for Searching & Sorting yet</div>,
       Analysis: 'This is the analysis of the results for Searching & Sorting.',
       Posttest: <Posttest topic="Searching & Sorting" />,
       'Further Readings/References': 'References and further readings for Searching & Sorting.',
@@ -80,7 +85,7 @@ const Experiments = () => {
         </div>
       ),
       Pretest: <Pretest topic="Stacks" />,
-      Animation: <Animation topic="Stacks" />,
+      Animation: <StackAnimation />, // Use StackAnimation for the animation
       Analysis: 'This is the analysis of the results for Stacks.',
       Posttest: <Posttest topic="Stacks" />,
       'Further Readings/References': 'References and further readings for Stacks.',
@@ -103,7 +108,7 @@ const Experiments = () => {
         </div>
       ),
       Pretest: <Pretest topic="Queue" />,
-      Animation: '',
+      Animation: <QueueAnimation />, // Use QueueAnimation for the animation
       Analysis: 'This is the analysis of the results for Queue.',
       Posttest: <Posttest topic="Queue" />,
       'Further Readings/References': 'References and further readings for Queue.',
@@ -114,7 +119,7 @@ const Experiments = () => {
       Overview: <LinkedList />,
       Video: <p>Video content for Linked List is not available at the moment.</p>,
       Pretest: <Pretest topic="LinkedList" />,
-      Animation: <Animation topic="LinkedList" />,
+      Animation: <LinkedListAnimation />, // Use LinkedListAnimation for the animation
       Analysis: 'This is the analysis of the results for Linked List.',
       Posttest: <Posttest topic="LinkedList" />,
       'Further Readings/References': 'References and further readings for Linked List.',
@@ -125,7 +130,7 @@ const Experiments = () => {
       Overview: <Tree />,
       Video: <p>Video content for Tree is not available at the moment.</p>,
       Pretest: <Pretest topic="Tree" />,
-      Animation: <Animation topic="Tree" />,
+      Animation: <TreeAnimation/>,
       Analysis: 'This is the analysis of the results for Tree.',
       Posttest: <Posttest topic="Tree" />,
       'Further Readings/References': 'References and further readings for Tree.',
@@ -136,7 +141,7 @@ const Experiments = () => {
       Overview: <Graph />,
       Video: <p>Video content for Graph is not available at the moment.</p>,
       Pretest: <Pretest topic="Graph" />,
-      Animation: <Animation topic="Graph" />,
+      Animation: <div>No animation available for Graph yet</div>,
       Analysis: 'This is the analysis of the results for Graph.',
       Posttest: <Posttest topic="Graph" />,
       'Further Readings/References': 'References and further readings for Graph.',
@@ -189,7 +194,7 @@ const Experiments = () => {
               <h3>{selectedSection}</h3>
 
               {selectedSection === 'Animation' ? (
-                <Animation topic={selectedTopic} />
+                sectionContent[selectedTopic].Animation // Directly show the animation component based on the topic
               ) : (
                 typeof sectionContent[selectedTopic][selectedSection] === 'string' ? (
                   <p>{sectionContent[selectedTopic][selectedSection]}</p>

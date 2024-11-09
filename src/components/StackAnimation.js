@@ -1,6 +1,6 @@
 // src/components/Animation.js
 import React, { useState } from 'react';
-import './Animation.css';
+import './StackAnimation.css';
 
 const StackSimulation = () => {
   const [stack, setStack] = useState([]);
@@ -59,5 +59,6 @@ const StackSimulation = () => {
     </div>
   );
 };
+
 
 export default StackSimulation;

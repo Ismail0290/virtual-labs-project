@@ -1,0 +1,72 @@
+/* Main container */
+.tree-animation-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Control panel */
+  .control-panel {
+    background-color: #e3f1e2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .control-panel input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+  
+  .control-panel button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .control-panel button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Found message */
+  .found-message {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* SVG styling for tree visualization */
+  svg {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+  }
+  
+  /* Tree nodes */
+  .node circle {
+    fill: white;
+    stroke: green;
+    stroke-width: 2;
+  }
+  
+  .node text {
+    fill: green;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  /* Links between nodes */
+  .link {
+    fill: none;
+    stroke: green;
+    stroke-width: 2;
+  }
+  

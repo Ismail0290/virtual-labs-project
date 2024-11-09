@@ -1,0 +1,77 @@
+/* Shared CSS for Stack and Queue */
+
+.stack-container, .queue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .stack-display, .queue-display {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stack-line, .queue-line {
+    display: flex;
+    border: 1px solid red;
+    padding: 10px;
+    gap: 5px;
+  }
+  
+  .stack-item, .queue-item {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out; /* Animation */
+  }
+  
+  /* For Queue-specific Animations */
+  .queue-item.shift-left {
+    transform: translateX(-50px); /* Shift left when dequeuing */
+  }
+  
+  .queue-item.new-item {
+    animation: fade-in 0.5s ease-in-out; /* Animation for new enqueue */
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(50px); /* Slide in from the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .queue-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  .queue-head {
+    position: absolute;
+    left: 10px;
+    top: -25px;
+  }
+  
+  .queue-tail {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+  }
+  
+  .stack-controls, .queue-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
